@@ -1,0 +1,50 @@
+{
+  "name": "js-mono",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "scripts": {
+    "web:dev": "yarn workspace web dev",
+    "mobile:dev": "yarn workspace mobile start",
+    "lint": "yarn eslint ./packages/libs/src ./apps/web/src ./apps/mobile/src",
+    "test": "yarn jest --config packages/libs/jest.config.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@eslint/compat": "^1.1.1",
+    "@eslint/eslintrc": "^3",
+    "@eslint/js": "^9.8.0",
+    "@nx/eslint": "21.1.2",
+    "@nx/eslint-plugin": "21.1.2",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "^15.2.4",
+    "eslint-config-prettier": "^10.0.0",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-jsx-a11y": "6.10.1",
+    "eslint-plugin-react": "7.35.0",
+    "eslint-plugin-react-hooks": "5.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-expo": "~52.0.2",
+    "ts-jest": "^29.3.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5",
+    "typescript-eslint": "^8.19.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
