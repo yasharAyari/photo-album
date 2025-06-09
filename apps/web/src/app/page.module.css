@@ -1,0 +1,26 @@
+.page {
+  display: grid;
+  grid-template-rows: 20px 1fr 20px;
+  justify-items: center;
+  min-height: 100svh;
+  padding-top: 16px;
+}
+
+.container {
+  columns: 3 200px;
+  column-gap: 16px;
+  width: 800px;
+}
+
+.imageWrapper {
+  margin: 0 16px 16px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+
+.imageWrapper img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
